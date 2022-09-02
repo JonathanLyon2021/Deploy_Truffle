@@ -8,4 +8,9 @@ contract PublicArticle{
     uint public expires;
     address public owner = msg.sender;
     
+    modifier onlyOwner() {
+        require(msg.sender == owner);
+        _;
+    }
+
 }
