@@ -25,4 +25,8 @@ contract PublicArticle{
     function setArticleText(string memory _articleText) public onlyOwner {
         articleText = _articleText;
     }
+    
+     function setDuration(uint _duration) public onlyOwner {
+        expires = block.timestamp + _duration;
+    }
 }
