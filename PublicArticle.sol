@@ -29,4 +29,8 @@ contract PublicArticle{
      function setDuration(uint _duration) public onlyOwner {
         expires = block.timestamp + _duration;
     }
+    
+     function getArticleName() public view limitedTime returns(string memory) {
+        return articleName;
+    }
 }
