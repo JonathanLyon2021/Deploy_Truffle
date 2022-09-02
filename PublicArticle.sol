@@ -12,5 +12,10 @@ contract PublicArticle{
         require(msg.sender == owner);
         _;
     }
-
+    
+    modifier limitedTime() {
+       require(block.timestamp <= expires);
+       _;
+    }
+    
 }
