@@ -18,4 +18,7 @@ contract PublicArticle{
        _;
     }
     
+     function setArticleName(string memory _articleName) public onlyOwner {
+        articleName = _articleName;
+    }
 }
