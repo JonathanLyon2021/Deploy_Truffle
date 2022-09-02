@@ -33,4 +33,8 @@ contract PublicArticle{
      function getArticleName() public view limitedTime returns(string memory) {
         return articleName;
     }
+    
+    function getArticleText() public view limitedTime returns(string memory) {
+        return articleText;
+    }
 }
