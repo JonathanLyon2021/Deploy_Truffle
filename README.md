@@ -8,6 +8,6 @@ started, you must have Truffle and Ganache-cli installed. Ganache-cli will be th
 blockchain that runs on our machine only.
 
 # Prerequisites
-• Ganache CLI v6.12.2
-• Truffle v5.4.15
-• Solidity 0.8.7+commit.e28d00a7.Emscripten.clang (solc-js)
+     Ganache CLI v6.12.2
+     Truffle v5.4.15
+     Solidity 0.8.7+commit.e28d00a7.Emscripten.clang (solc-js)
